@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.Main2Fragment"
+    android:background="@color/bg_login"
+    android:paddingBottom="74dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bg_status">
+
+        <LinearLayout
+            android:id="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ico_back"
+                android:padding="4dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:text="发起任务"
+                android:background="@drawable/shape_radius8_stroke1"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--布局一-->
+    <include layout="@layout/layout_main2_1"/>
+    <!--抵达布局-->
+    <include layout="@layout/layout_main2_2"/>
+    <!--结束布局-->
+    <include layout="@layout/layout_main2_3"/>
+
+
+</FrameLayout>

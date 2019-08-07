@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="BlueTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimaryDark">@color/bg_status</item>
+        <item name="android:windowNoTitle">true</item><!--是否不显示标题-->
+        <item name="android:windowActionBar">false</item><!--是否显示窗口操作栏-->
+        <item name="android:windowFullscreen">false</item><!--是否全屏-->
+        <!--<item name="android:windowIsTranslucent">true</item>是否透明 这句会让上一个activity的onstart不执行 谨慎使用-->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item><!--是否动态的变化状态栏的字体和图标的颜色-->
+    </style>
+    <style name="LaunTheme" parent="AppTheme.NoActionBar">
+        <item name="colorPrimaryDark">@color/bg_launch</item>
+        <item name="android:windowNoTitle">true</item><!--是否不显示标题-->
+        <item name="android:windowActionBar">false</item><!--是否显示窗口操作栏-->
+        <item name="android:windowFullscreen">false</item><!--是否全屏-->
+        <!--<item name="android:windowIsTranslucent">true</item>是否透明 这句会让上一个activity的onstart不执行 谨慎使用-->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item><!--是否动态的变化状态栏的字体和图标的颜色-->
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--模糊-->
+
+    </style>
+
+    <style name="dialog1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item>
+        <!--半透明-->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊-->
+
+    </style>
+
+</resources>
